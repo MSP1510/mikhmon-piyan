@@ -1,4 +1,17 @@
 <?php
+if(isset($_GET["wa_proxy"])){
+  header("Content-Type: application/json");
+  $cfg_f = __DIR__ . "/../include/wa_qr_cfg.json";
+  $cfg = file_exists($cfg_f) ? json_decode(file_get_contents($cfg_f), true) : ["wa_engine" => "http://10.20.30.50:3005"];
+  $base = rtrim($cfg["wa_engine"], "/");
+  $act = $_GET["wa_proxy"];
+  $ctx = stream_context_create(["http"=>["timeout"=>4, "method"=>($act=="status"?"GET":"POST"), "header"=>"Content-Type: application/json", "content"=>file_get_contents("php://input")]]);
+  $res = @file_get_contents($base . "/" . $act, false, $ctx);
+  echo $res ?: json_encode(["error"=>"Tidak dapat menjangkau Engine WA ($base). Pastikan HP terhubung ke Wi-Fi lokal atau gunakan URL Tunnel!"]);
+  exit;
+}
+?>
+<?php
 session_start();
 error_reporting(0);
 $cfg_f = __DIR__ . "/../include/wa_qr_cfg.json";
@@ -60,7 +73,7 @@ if (isset($_POST["save_wa_tpl"])) {
 <script>
 const WA_URL = <?= json_encode($cfg["wa_engine"]) ?>;
 function cekWaQr() {
-  fetch(WA_URL + "/status").then(r => r.json()).then(d => {
+  fetch("?wa_proxy=status&_=" + Date.now()).then(r => r.json()).then(d => {
     const st = document.getElementById("wa-st-txt");
     const box = document.getElementById("wa-qr-img");
     if (d.connected) {
@@ -77,7 +90,7 @@ function cekWaQr() {
   });
 }
 function putusWa() {
-  if (confirm("Putuskan perangkat WhatsApp?")) fetch(WA_URL + "/logout", {method:"POST"}).then(() => setTimeout(cekWaQr, 1500));
+  if (confirm("Putuskan perangkat WhatsApp?")) fetch("?wa_proxy=logout", {method:"POST"}).then(() => setTimeout(cekWaQr, 1500));
 }
 cekWaQr(); setInterval(cekWaQr, 4000);
 </script>
