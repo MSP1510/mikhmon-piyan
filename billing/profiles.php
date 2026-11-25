@@ -1,4 +1,4 @@
-<?php
+<?php error_reporting(E_ALL & ~E_DEPRECATED & ~E_NOTICE & ~E_WARNING);
 header('Content-Type: application/json');
 
 require_once(__DIR__ . '/../include/db_config.php');
