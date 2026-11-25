@@ -94,7 +94,6 @@ if (!isset($_SESSION["mikhmon"])) {
   } elseif ($hotspot == "whatsapp-gateway") {
     $ssett = "active";
     $swagateway = "active";
-    $mpage = "WhatsApp Gateway";
     $settmenu = "menu-open";
 	
   } elseif ($hotspot == "genieacs") {
@@ -490,7 +489,6 @@ include('./info.php');
   <a href="./?hotspot=uplogo&session=<?= $session; ?>" class="menu <?= $uplogo; ?>"> <i class="fa fa-upload "></i> <?= $_upload_logo ?> </a>
   <a href="./?hotspot=template-editor&template=default&session=<?= $session; ?>" class="menu <?= $teditor; ?>"> <i class="fa fa-edit "></i> <?= $_template_editor ?> </a>
   <a href="./?hotspot=whatsapp-settings&session=<?= $session; ?>" class="menu <?= $swhatsapp; ?>"> <i class="fa fa-whatsapp "></i> WhatsApp Settings </a>
-  <a href="./?hotspot=whatsapp-gateway&session=<?= $session; ?>" class="menu <?= $swagateway; ?>"> <i class="fa fa-server "></i> WhatsApp Gateway </a>          
   </div>
 
   <!--agent management-->
