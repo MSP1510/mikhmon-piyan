@@ -1,4 +1,4 @@
-<?php
+<?php error_reporting(E_ALL & ~E_DEPRECATED & ~E_NOTICE & ~E_WARNING);
 /*
  * Agent Navigation Bar - Bottom Navigation for Mobile
  * Consistent with MikhMon styling

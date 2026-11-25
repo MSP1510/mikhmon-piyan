@@ -1,4 +1,4 @@
-<?php
+<?php error_reporting(E_ALL & ~E_DEPRECATED & ~E_NOTICE & ~E_WARNING);
 /*
  * Xendit Payment Webhook Handler
  * Handle payment notification from Xendit

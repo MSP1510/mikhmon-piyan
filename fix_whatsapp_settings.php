@@ -1,4 +1,4 @@
-<?php
+<?php error_reporting(E_ALL & ~E_DEPRECATED & ~E_NOTICE & ~E_WARNING);
 /**
  * Fix WhatsApp Settings for Public Voucher
  * Run this file once to add WhatsApp API settings

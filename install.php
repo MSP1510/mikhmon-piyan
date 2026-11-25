@@ -24,7 +24,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['save_config'])) {
     $host = $_POST['db_host'] ?? 'localhost';
     $user = $_POST['db_user'] ?? 'root';
     $pass = $_POST['db_pass'] ?? '';
-    $name = $_POST['db_name'] ?? 'mikhmon_agent';
+    $name = $_POST['db_name'] ?? 'mikhmon_piyan';
     
     // Test connection
     try {
@@ -754,7 +754,7 @@ function sendTelegramNotification($botToken, $chatId, $message) {
                         </div>
                         <div class="form-group">
                             <label>Database Name</label>
-                            <input type="text" name="db_name" class="form-control" value="<?= defined('DB_NAME') ? DB_NAME : 'mikhmon_agent' ?>" required placeholder="e.g. mikhmon_agent">
+                            <input type="text" name="db_name" class="form-control" value="<?= defined('DB_NAME') ? DB_NAME : 'mikhmon_piyan' ?>" required placeholder="e.g. mikhmon_piyan">
                             <small style="color: var(--text-light); margin-top: 4px; display: block; font-size: 12px;">
                                 <i class="fas fa-info-circle"></i> Database akan otomatis dibuat jika belum ada.
                             </small>

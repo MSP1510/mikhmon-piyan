@@ -1,4 +1,4 @@
-<?php
+<?php error_reporting(E_ALL & ~E_DEPRECATED & ~E_NOTICE & ~E_WARNING);
 /*
  * Get Profile Direct Links for Admin
  * Called via AJAX from pricing page

@@ -1,4 +1,4 @@
-<?php
+<?php error_reporting(E_ALL & ~E_DEPRECATED & ~E_NOTICE & ~E_WARNING);
 /**
  * Digiflazz Webhook Endpoint
  * Menangani callback status transaksi dari Digiflazz.

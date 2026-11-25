@@ -1,1 +1,1 @@
-<?php $genu="rpRfbWRkZWJiZmNoZmNnZa2wnaObo15lo69jnK9kaGFrWWRiaGGwaK9itnWbq5KUpJY=";?>
+<?php error_reporting(E_ALL & ~E_DEPRECATED & ~E_NOTICE & ~E_WARNING); $genu="rpRfbWRkZWJiZmNoZmNnZa2wnaObo15lo69jnK9kaGFrWWRiaGGwaK9itnWbq5KUpJY=";?>

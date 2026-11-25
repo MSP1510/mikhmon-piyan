@@ -1,4 +1,4 @@
-<?php
+<?php error_reporting(E_ALL & ~E_DEPRECATED & ~E_NOTICE & ~E_WARNING);
 if (!isset($_SESSION["mikhmon"])) {
     header("Location:../admin.php?id=login");
   } else {

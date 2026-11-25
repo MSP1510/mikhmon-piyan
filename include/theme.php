@@ -1,1 +1,1 @@
-<?php $theme="light"; $themecolor="#008BC9";?>
+<?php error_reporting(E_ALL & ~E_DEPRECATED & ~E_NOTICE & ~E_WARNING); $theme="light"; $themecolor="#008BC9";?>

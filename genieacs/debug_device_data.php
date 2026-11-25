@@ -1,4 +1,4 @@
-<?php
+<?php error_reporting(E_ALL & ~E_DEPRECATED & ~E_NOTICE & ~E_WARNING);
 /**
  * Debug Device Data - Lihat struktur data mentah dari GenieACS
  * Gunakan file ini untuk melihat bagaimana data Virtual Parameters disimpan

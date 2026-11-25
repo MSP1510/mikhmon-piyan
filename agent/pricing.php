@@ -1,4 +1,4 @@
-<?php
+<?php error_reporting(E_ALL & ~E_DEPRECATED & ~E_NOTICE & ~E_WARNING);
 /*
  * Agent Pricing Management
  * Set harga jual voucher untuk public sales

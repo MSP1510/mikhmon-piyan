@@ -1,4 +1,4 @@
-<?php
+<?php error_reporting(E_ALL & ~E_DEPRECATED & ~E_NOTICE & ~E_WARNING);
 // Agent Setup Card - Add this to settings page
 include_once('./include/db_config.php');
 

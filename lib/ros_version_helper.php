@@ -1,4 +1,4 @@
-<?php
+<?php error_reporting(E_ALL & ~E_DEPRECATED & ~E_NOTICE & ~E_WARNING);
 /**
  * RouterOS Version Detection Helper
  * Deteksi versi RouterOS dan generate script yang kompatibel

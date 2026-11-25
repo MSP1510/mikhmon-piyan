@@ -1,4 +1,4 @@
-<?php
+<?php error_reporting(E_ALL & ~E_DEPRECATED & ~E_NOTICE & ~E_WARNING);
 // No session_start() needed - already started in index.php
 // No auth check needed - already checked in index.php
 

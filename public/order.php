@@ -1,4 +1,4 @@
-<?php
+<?php error_reporting(E_ALL & ~E_DEPRECATED & ~E_NOTICE & ~E_WARNING);
 /*
  * Direct Order Page - Order specific profile directly
  * URL: /public/order.php?agent=AG001&profile=PROFILE_ID

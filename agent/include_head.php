@@ -1,4 +1,4 @@
-<?php
+<?php error_reporting(E_ALL & ~E_DEPRECATED & ~E_NOTICE & ~E_WARNING);
 /*
  * Agent Head HTML - Consistent with MikhMon styling
  * This file provides MikhMon styling for agent pages

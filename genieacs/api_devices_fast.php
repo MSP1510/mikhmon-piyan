@@ -1,4 +1,4 @@
-<?php
+<?php error_reporting(E_ALL & ~E_DEPRECATED & ~E_NOTICE & ~E_WARNING);
 /*
  * GenieACS API Devices - AJAX Endpoint (FAST VERSION)
  * Returns HTML for device list using optimized parser

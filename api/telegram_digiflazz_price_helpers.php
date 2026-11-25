@@ -1,4 +1,4 @@
-<?php
+<?php error_reporting(E_ALL & ~E_DEPRECATED & ~E_NOTICE & ~E_WARNING);
 /**
  * Telegram Digiflazz Price List Helpers
  * Functions untuk menampilkan daftar harga dan pencarian produk Digiflazz di Telegram

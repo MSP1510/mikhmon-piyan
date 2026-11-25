@@ -1,4 +1,4 @@
-<?php
+<?php error_reporting(E_ALL & ~E_DEPRECATED & ~E_NOTICE & ~E_WARNING);
 /**
  * Quick Fix: Set Telegram Webhook
  * Script ini akan otomatis set webhook URL yang benar

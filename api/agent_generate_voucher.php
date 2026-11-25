@@ -1,4 +1,4 @@
-<?php
+<?php error_reporting(E_ALL & ~E_DEPRECATED & ~E_NOTICE & ~E_WARNING);
 /*
  * API Bridge - Agent Generate Voucher
  * Agent panel call this API to generate voucher

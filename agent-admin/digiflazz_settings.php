@@ -1,4 +1,4 @@
-<?php
+<?php error_reporting(E_ALL & ~E_DEPRECATED & ~E_NOTICE & ~E_WARNING);
 /*
  * Admin Panel - Digiflazz Integration Settings
  * Konfigurasi koneksi server pulsa Digiflazz dan sinkronisasi produk

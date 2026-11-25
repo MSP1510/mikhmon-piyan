@@ -1,4 +1,4 @@
-<?php
+<?php error_reporting(E_ALL & ~E_DEPRECATED & ~E_NOTICE & ~E_WARNING);
 // Admin Digiflazz Transactions History
 // No session_start() needed - already handled in index.php
 

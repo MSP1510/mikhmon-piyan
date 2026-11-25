@@ -1,4 +1,4 @@
-<?php
+<?php error_reporting(E_ALL & ~E_DEPRECATED & ~E_NOTICE & ~E_WARNING);
 /*
  * SOLUTION 4: Cron Job for Telegram Callback Processing
  * Run this every minute: * * * * * php /path/to/telegram_callback_cron.php

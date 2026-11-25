@@ -1,4 +1,4 @@
-<?php
+<?php error_reporting(E_ALL & ~E_DEPRECATED & ~E_NOTICE & ~E_WARNING);
 /*
  * SOLUTION 3: Background Callback Processor
  * Process callback queries in background for instant response

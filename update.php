@@ -1,4 +1,4 @@
-<?php
+<?php error_reporting(E_ALL & ~E_DEPRECATED & ~E_NOTICE & ~E_WARNING);
 /**
  * Auto-Update System from GitHub - OPTIMIZED FOR SHARED HOSTING
  * Repository: https://github.com/alijayanet/mikhmon-agent

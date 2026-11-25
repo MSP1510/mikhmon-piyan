@@ -1,4 +1,4 @@
-<?php date_default_timezone_set($_SESSION['timezone']); ?>
+<?php error_reporting(E_ALL & ~E_DEPRECATED & ~E_NOTICE & ~E_WARNING); date_default_timezone_set($_SESSION['timezone']); ?>
 <script>
 function sendToQuickPrinterChrome(){
  

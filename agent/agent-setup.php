@@ -1,4 +1,4 @@
-<?php
+<?php error_reporting(E_ALL & ~E_DEPRECATED & ~E_NOTICE & ~E_WARNING);
 /*
  * Agent Setup Page - Database Configuration & System Setup
  * URL: /?hotspot=agent-setup&session=SESSION_NAME

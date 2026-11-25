@@ -1,4 +1,4 @@
-<?php
+<?php error_reporting(E_ALL & ~E_DEPRECATED & ~E_NOTICE & ~E_WARNING);
 /*
  * Agent System Setup - Integrated with MikhMon Settings
  */
@@ -35,7 +35,7 @@ if (isset($_POST['install_agent_db'])) {
         $host = $_POST['db_host'] ?? 'localhost';
         $user = $_POST['db_user'] ?? 'root';
         $pass = $_POST['db_pass'] ?? '';
-        $dbname = $_POST['db_name'] ?? 'mikhmon_agents';
+        $dbname = $_POST['db_name'] ?? 'mikhmon_piyans';
         
         // Connect to MySQL
         $conn = new PDO("mysql:host=$host", $user, $pass);
@@ -308,7 +308,7 @@ if (isset($_POST['install_agent_db'])) {
 
                 <div class="form-group">
                     <label>Nama Database</label>
-                    <input type="text" name="db_name" class="form-control" value="mikhmon_agents" required>
+                    <input type="text" name="db_name" class="form-control" value="mikhmon_piyans" required>
                     <small style="color: #666;">Database akan dibuat otomatis jika belum ada</small>
                 </div>
 

@@ -1,4 +1,4 @@
-<?php
+<?php error_reporting(E_ALL & ~E_DEPRECATED & ~E_NOTICE & ~E_WARNING);
 // function  format bytes
 function formatBytes($size, $decimals = 0){
 $unit = array(

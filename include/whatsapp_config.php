@@ -1,4 +1,4 @@
-<?php
+<?php error_reporting(E_ALL & ~E_DEPRECATED & ~E_NOTICE & ~E_WARNING);
 /*
  * WhatsApp Integration for MikhMon
  * Supports multiple WhatsApp Gateway APIs

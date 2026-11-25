@@ -34,7 +34,7 @@ $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 // Ensure database exists and is selected (for fresh install)
 try {
-    $dbName = defined('DB_NAME') ? DB_NAME : 'mikhmon_agents';
+    $dbName = defined('DB_NAME') ? DB_NAME : 'mikhmon_piyans';
     $pdo->exec("CREATE DATABASE IF NOT EXISTS `{$dbName}` CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci");
     $pdo->exec("USE `{$dbName}`");
 } catch (PDOException $e) {

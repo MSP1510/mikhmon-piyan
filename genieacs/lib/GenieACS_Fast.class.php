@@ -1,4 +1,4 @@
-<?php
+<?php error_reporting(E_ALL & ~E_DEPRECATED & ~E_NOTICE & ~E_WARNING);
 /**
  * Optimized GenieACS Parser for Mikhmon Agent
  * Based on GenieACS_Fast.php - 10x faster than traditional parsing
